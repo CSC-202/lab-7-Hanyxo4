@@ -4,10 +4,14 @@
 
 import matplotlib.pyplot as plt
 
+TELEPHONES = 'Rise with the morning You call to me My thoughts are crawling Youre all I see .I wish I could live without you But youre a part of me Wherever I go Youll always be next to me .Fall into the night As I gaze into you Shine so bright Its all I do I wish I could live without you But youre a part of me Wherever I go Youll always be next to me Youll always be next to me Youll always be next to me Youll always be next to me Youll always be next to me'
+DARKPARADISE= 'Kiss me hard before you go Summertime sadness I just wanted you to know That, baby, you the best I got my red dress on tonight Dancin in the dark in the pale moonlight Done my hair up real big beauty queen style High heels off Im feelin alive Oh, my God, I feel it in the air Telephone wires above are sizzlin like a snare Honey, Im on fire, I feel it everywhere Nothin scares me anymore Kiss me hard before you go Summertime sadness I just wanted you to know That, baby, you the best I got my red dress on tonight Dancin in the dark in the pale moonlight Done my hair up real big beauty queen style High heels off Im feelin alive Oh my God I feel it in the air Telephone wires above are sizzlin like a snare Honey Im on fire I feel it everywhere Nothin scares me anymore Kiss me hard before you go Summertime sadness I just wanted you to know That, baby, you the best I got that summertime, summertime sadness Su-su-summertime, summertime sadness Got that summertime, summertime sadness Oh, oh-oh-oh-oh Im feelin electric tonight Cruisin down the coast goin' 'bout 99 Got my bad baby by my heavenly side I know if I go, Ill die happy tonight Oh, my God, I feel it in the air Telephone wires above are sizzlin like a snare Honey, Im on fire, I feel it everywhere Nothin scares me anymore Kiss me hard before you go Summertime sadness I just wanted you to know That baby, you the best I got that summertime, summertime sadness Su-su-summertime, summertime sadness Got that summertime, summertime sadness Oh, oh-oh-oh-oh Think Ill miss you forever Like the stars miss the sun in the mornin sky Laters better than never Even if youre gone, Im gonna drive (drive), drive'
+FREEFALL = 'Called to the Devil and the Devil did come I said to the Devil, "Devil, do you like drums? Do you like cigarettes, dominoes, rum?" He said, "Only sundown, Sundays, Christmas" Some days end when I need a few friends Now and again, I could never hope to keep them Thought to give friends what I thought that they wanted Never had they needed a good friend as Ive been Dont get me ventin on friends who resent you Cause all youve ever done is been a noose to hang on to They thought was a necklace and reckless They fell into Hell where you both hang with nothing to do but Scratch, kick, let gravity win like Fuck this, let gravity win like You could leave it all behind Even the Devil need time alone sometimes You could let it all go You could let it all go Its called freefall Its called "freefall Called to the Devil and the Devil did come I said to the Devil, "Devil, do you like drums? Do you like cigarettes, dominoes, rum?" He said, "Only sundown, Sundays, Christmas" Some days end when I need a few friends Now and again, I could never hope to keep them Thought to give friends what I thought that they wanted Never had they needed a good friend as Ive been Dont get me ventin on friends who resent you Cause all youve ever done is been a noose to hang on to They thought was a necklace and reckless They fell into Hell where you both hang with nothing to do but Scratch, kick, let gravity win like Fuck this, let gravity win like You could leave it all behind Even the Devil need time alone sometimes You could let it all go you could let it all go Its called Freefall'
+
+
+
 # DATA - lyrics
-POKEMON_LYRICS = 'I wanna be the very best. Like no one ever was. To catch them is my real test. To train them is my cause. I will travel across the land. Searching far and wide. Each Pokemon to understand. The power that\'s inside. (Pokemon, gotta catch \'em all.) Its you and me. I know it\'s my destiny. (Pokemon.) Oh, you\'re my best friend. In a world we must defend. (Pokemon, gotta catch \'em all.) A heart so true. Our courage will pull us through. You teach me and I\'ll teach you. Pokemon. (gotta catch \'em all.) Gotta catch \'em all. Yeah. Every challenge along the way. With courage I will face. I will battle every day. To claim my rightful place. Come with me, the time is right. There\'s no better team. Arm in arm we\'ll win the fight. It\'s always been our dream. (Pokemon, gotta catch \'em all.) Its you and me. I know it\'s my destiny (Pokemon.) Oh, you\'re my best friend. In a world we must defend. (Pokemon, gotta catch \'em all.) A heart so true. Our courage will pull us through. You teach me and I\'ll teach you. Pokemon (gotta catch \'em all.) Gotta catch \'em all. Gotta catch \'em all. Gotta catch \'em all. Gotta catch \'em all. Yeah! (Pokemon, gotta catch \'em all). Its you and me. I know it\'s my destiny. (Pokemon) Oh, you\'re my best friend. In a world we must defend. (Pokemon, gotta catch \'em all.) A heart so true. Our courage will pull us through. You teach me and I\'ll teach you Pokemon. (gotta catch \'em all). Gotta catch \'em all. (Pokemon)'
-JIGGLE_JIGGLE = 'You have to have something that sticks. You have to have something that\'s monumental. When you walk out on stage, that\'s been monumental. (Jiggle, jiggle) Can you remember any of the rap that you did? My money don\'t jiggle, jiggle, it folds. I like to see you wiggle, wiggle, for sure. It makes me want to dribble, dribble, you know. Riding in my Fiat, you really have to see it. Six feet two in a compact, no slack. But luckily the seats go back. I got a knack to relax in my mind. Sipping some red, red wine. I sip booze from chalices, holding my palaces. Crib is so crampy suckers suffer from paralysis. Rhymes, I write them in the castle. You try to diss me and pretty soon your ass. Will squat in a cell \'cause I can tell you it\'s illegal. Treason, that\'s the reason I\'m regal. You do the time for the crime of lèse-majesté. And **** the police \'cause they can\'t arrest me. (They can\'t arrest me, they can\'t arrest me). (I like to see you wiggle, it makes me dribble, fancy a fiddle?). My money don\'t jiggle, jiggle, it folds. I like to see you wiggle, wiggle, for sure. It makes me want to dribble, dribble, you know. Riding in my Fiat, you really have to see it. Six feet two in a compact, no slack. But luckily the seats go back. I got a knack to relax in my mind. Sipping some red, red wine. (I like to see you wiggle, it makes me dribble, fancy a fiddle?). (I like to see you wiggle, it makes me dribble, fancy a fiddle?). (I like to see you wiggle, it makes me dribble, fancy a fiddle?). (I like to see you wiggle, it makes me dribble, fancy a fiddle?)'
-ALPHABET = 'Now it\'s time for our wrap up. Let\'s give it everything we\'ve got. Ready, begin. Artificial amateurs aren\'t at all amazing. Analytically, I assault, animate things. Broken barriers bounded by the bomb beat. Buildings are broken, basically I\'m bombarding. Casually create catastrophes, casualties. Canceling cats got their canopies collapsing. Detonate a dime of dank daily doin\' dough. Demonstrations, Don Dada on the down low. Eatin\' other editors with each and every energetic. Epileptic episode, elevated etiquette. Furious fat fabulous fantastic. Flurries of funk felt feeding the fanatics. Imitators idolize, I intimidate. In a instant, I\'ll rise in a irate state. Juiced on my jams like jheri curls, jockin\' joints. Justly, it\'s just me, writin\' my journals. Kindly I\'m kindling all kinds of ink on. Karate kick type Brits in my kingdom. Let me live a long life, lyrically lessons is. Learned lame louses just lose to my livery. My mind makes marvelous moves, masses. Marvel and move, many mock what I\'ve mastered.  Niggas nap knowin\' I\'m nice naturally. Knack, never lack, make noise nationally.  Operation, opposition, off, not optional. Out of sight, out of mind, wide beaming opticals. Perfected poem, powerful punchlines. Pummeling petty powder puffs in my prime. Quite quaint quotes keep quiet it\'s Quannum Quarrelers ain\'t got a quarter of what we got, uh. Really raw raps, risin\' up rapidly. Riding the rushing radioactivity. Super scientifical sound search sought. Silencing super fire saps that are soft. Tales ten times talented, they\'re too tough. Take that, challengers, get a tune up. Universal, unique untouched. Unadulterated, the raw uncut. Verb vice Lord victorious valid. Violate vibes that are vain make \'em vanished. Why I\'m all well, would a wise wordsmith. Just weaving up words weeded up, on my work shift. Xerox, my X-ray-diation holes extra large. X-height letters and xylophone tones.'
+
 
 # DATA - mantras
 GREEN_LATTERN = 'In brightest day, in blackest night, No evil shall escape my sight. Let those who worship evil\'s might, Beware my power... Green Lantern\'s light!'
@@ -32,21 +36,107 @@ def huffman(message:str) -> float:
     coding: dict = dict()   # key  -> a letter
                             # item -> a binary encoding
 
+def huffman(message:str) -> float:
+    message = message.upper()
 
-    # STEP 0
-    ## defining our data structures
-    ## defining operations
+    # the output, should be all 0's and 1s
+    result: str = str()
 
-    # STEP 1
-    ## counting the frequencies
+    # for counting the letter frequencies
+    freq: dict = dict() # key  -> a letter
+                        # item -> num of occurences
 
-    # STEP 2
-    ## initialize the nodes
+    # for holding the nodes of the huffman tree
+    nodes: list = list() 
 
-    # STEP 3
-    ## combine each nodes until there's only one item in the nodes list
+    # for storing the code for each letter
+    coding: dict = dict()   # key  -> a letter
+                            # item -> a binary encoding
 
-    # STEP 4
+    class Node: # NOT given to students
+        weight:int
+        letters:str
+        left:any
+        right:any
+    # TODO
+   
+        def __init__(self, letters= None, weight=None, left=None, right=None ):
+            self.weight= weight
+            self.letters= letters
+            self.left= left
+            self.right= right
+        
+    
+## defining operations
+### recursively traverses the huffman tree to record the codes
+    def retrieve_codes(v: Node, path: str=''):
+        if v.letters != None: # if 'TODO': # TODO
+            coding[v.letters] = path # TODO
+        else:
+            retrieve_codes(v.left, path + '0') # TODO
+            retrieve_codes(v.right, path + '1')  # TODO
+
+# STEP 1
+## counting the frequencies - TODO
+    for i in message:
+        if i in freq:
+            freq[i]+=1
+        else:
+            freq[i] = 1
+
+
+# STEP 2
+## initialize the nodes - TODO
+    nodes =list()
+    for letters, count in freq.items():
+    #nodes = list()
+        nodes.append(Node(letters,count))
+
+# STEP 3 - TODO     
+## combine each nodes until there's only one item in the nodes list
+    while len(nodes) > 1:
+    ## sort based on weight
+        nodes.sort(key=lambda x: x.weight, reverse=True)
+
+    ## get the first min
+        min_a: Node = nodes.pop()
+
+    ## get the second min
+        min_b: Node = nodes.pop()
+
+    ## combine the two
+        combined = Node(None,min_a.weight + min_b.weight, min_a, min_b) # TODO
+
+    ## put the combined nodes back in the list of nodes
+        nodes.append(combined)
+
+# STEP 4
+## reconstruct the codes
+    huff_root = nodes[0]
+    retrieve_codes(huff_root)
+    print(coding)
+    
+    for i in message:
+        result += str(coding[i])
+    #result: str = str(coding [i])
+    
+
+
+ # TODO (hint coding[letter] -> code)
+
+
+# STEP 5
+## analyize compression performance
+    n_original_bits: int = len(message) * 8
+    n_encoded_bits: int = len(result)
+    compression_ratio: float = (1 - n_encoded_bits / n_original_bits) * 100
+
+    print(f'original: {n_original_bits:^4d} bits')
+    print(f'encoded : {n_encoded_bits:^4d} bits')
+    print(f'savings : {int(compression_ratio):^4d} % compression')
+    return result, coding, compression_ratio
+
+
     ## reconstruct the codes
 
     # STEP 5
@@ -65,46 +155,91 @@ MAX_N: int = int(128 * 3 / 2)
 
 # PLOT 1
 ## POKEMON
+data = str = TELEPHONES
 ratios: list = list()
-for i in range(1, MAX_N):
-    sub_message = POKEMON_LYRICS[0:i]
-    _, _, ratio = huffman(sub_message)
+for i in range(1, len(data)):
+    x = data[0:i]
+    compressed, coding, ratio = huffman(x)
     ratios.append(ratio)
+    min_ratio=min(ratio)
+    min_idx = ratios.index(min_ratio)
+
+plt.plot(ratios[:MAX_N], 
+label = f'TELEPHONES (n={len(coding)})',color = 'green',linestyle='dashdot')
+
 
 ## JIGGLE JIGGLE
+data: str = DARKPARADISE
 ratios: list = list()
-for i in range(1, MAX_N):
-    sub_message = JIGGLE_JIGGLE[0:i]
-    _, _, ratio = huffman(sub_message)
+for i in range(1,len(data)):
+    x= data[0:i]
+    compressed, coding, ratio= huffman(x)
     ratios.append(ratio)
+    min_ratio = min(ratios)
+    min_idx = ratios.index (min_ratio)
+
+plt.plot (ratios [:MAX_N], label = f'DARKPARADISE(n={len(coding)})', color='green', linestyle='dashdot' )
+
 
 ## ALPHABET
-ratios: list = list()
-for i in range(1, MAX_N):
-    sub_message = ALPHABET[0:i]
-    _, _, ratio = huffman(sub_message)
-    ratios.append(ratio)
 
+data: str = FREEFALL
+ratios: list = list()
+for i in range(1, len(data)):
+    x= data [0:i]
+    compressed, coding, ratio = huffman (x)
+    ratios.append(ratio)
+    min_ratio = min(ratios)
+    min_idx = ratios.index(min_ratio)
+
+plt.plot(ratios[:MAX_N], label=f'FREEFALL(n={len(coding)})', color ='blue', linestyle='dashdot')
+plt.legend()
+plt.gcf().supylabel("compression %")
+
+    
 # PLOT 2
 plt.subplot(2, 1, 2)
 
 ## SITH CODE
+data: str = SITH_CODE
 ratios: list = list()
-for i in range(1, MAX_N):
-    sub_message = SITH_CODE[0:i]
-    _, _, ratio = huffman(sub_message)
+for i in range(1, (len_data)):
+    x= data[0:i]
+    compressed, coding, ratio = huffman(x)
     ratios.append(ratio)
+    min_idx = ratios.index(min_ratio)
+
+plt.plot(ratios[:MAX_N], label=f'SITH_CODE (n={len(coding)})', color ='red', linestyle='dashdot')
+
 
 ## GREEN LATERN'S OATH
+data : str = GREEN_LATTERN
 ratios: list = list()
 for i in range(1, MAX_N):
-    sub_message = GREEN_LATTERN[0:i]
-    _, _, ratio = huffman(sub_message)
+    x = data[0:i]
+    compressed, coding, ratio = huffman(x)
     ratios.append(ratio)
+    min_ratio =  min(ratios)
+    min_inx= ratios(min_ratio)
+    
+
+plt.plot(ratios[:MAX_N], label=f'GREEN_LANTERN(n={len(coding)})', color ='green', linestyle='dashdot')
+
 
 ## JEDI CODE
+data: str = JEDI_CODE
 ratios: list = list()
-for i in range(1, MAX_N):
-    sub_message = JEDI_CODE[0:i]
-    _, _, ratio = huffman(sub_message)
+for i in range(1, len(data)):
+    x= data[0:i]
+    compressed, coding,ratio = huffman(x)
     ratios.append(ratio)
+    min_ratio= min(ratios)
+    min_idx = ratios.index(min_ratio)
+
+plt.plot(ratios[:MAX_N], label=f'JEDI CODE (n={len(coding)})', color ='blue', linestyle='dashdot')
+
+plt.xlabel("length of message")
+plt.legend()
+plt.show()
+    
+plt.plot(ratios[:MAX_N], label=f'Abundance (n={len(coding)})', color ='green', linestyle='dashdot')
