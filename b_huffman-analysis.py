@@ -141,11 +141,11 @@ def huffman(message:str) -> float:
 
     # STEP 5
     ## analyize compression performance
-    n_original_bits: int = len(message) * 8
-    n_encoded_bits: int = len(result)
-    compression_ratio: float = 1 - (n_encoded_bits / n_original_bits)
+    #n_original_bits: int = len(message) * 8
+    #n_encoded_bits: int = len(result)
+    #compression_ratio: float = 1 - (n_encoded_bits / n_original_bits)
 
-    return result, coding, compression_ratio
+    #return result, coding, compression_ratio
 
 # LYRICS
 plt.subplot(2, 1, 1)
